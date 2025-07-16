@@ -1,6 +1,6 @@
 public class QuickSort {
     public static void quickSort(int[] array, int leftIndex, int rightIndex) {
-        if (leftIndex < rightIndex) { // CORRIGIDO AQUI
+        if (leftIndex < rightIndex) { 
             int pivot = partition(array, leftIndex, rightIndex);
             quickSort(array, leftIndex, pivot - 1);
             quickSort(array, pivot + 1, rightIndex);
@@ -20,7 +20,7 @@ public class QuickSort {
             }
         }
 
-        // Coloca o pivô no lugar correto
+        // Colocando o pivô no seu lugar certo
         int temp = array[leftIndex];
         array[leftIndex] = array[i];
         array[i] = temp;
